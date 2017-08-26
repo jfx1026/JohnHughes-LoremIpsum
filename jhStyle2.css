@@ -1,0 +1,139 @@
+/* line 7, jhStyle2.scss */
+body {
+  font: 100% "PT Sans Narrow", sans-serif;
+  background: url(images/pip-background.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  background-color: #e34e8b;
+}
+
+/* line 18, jhStyle2.scss */
+.titleBlack {
+  background: black;
+  text-align: left;
+  padding: 20px 20px 20px 0;
+  width: 85%;
+  height: 11em;
+  margin-top: 6em;
+}
+
+/* line 27, jhStyle2.scss */
+.wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 5px 0;
+  min-height: 80px;
+}
+
+/* line 36, jhStyle2.scss */
+.textContainer {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+
+/* line 42, jhStyle2.scss */
+h1, h2 {
+  position: relative;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* line 48, jhStyle2.scss */
+h1 {
+  line-height: 0.8;
+  font-size: 9em;
+  font-family: "Yantramanav", sans-serif;
+  letter-spacing: -0.05em;
+  margin-top: .05em;
+  margin-left: -0.06em;
+}
+
+/* line 57, jhStyle2.scss */
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* line 62, jhStyle2.scss */
+.pink {
+  color: #e34e8b;
+}
+
+/* line 68, jhStyle2.scss */
+.formContainer {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+}
+
+/* line 76, jhStyle2.scss */
+#movieDropdown {
+  width: 75%;
+}
+
+/* line 83, jhStyle2.scss */
+#textRadio {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 90, jhStyle2.scss */
+#textRadio textarea {
+  resize: none;
+  height: 1.4em;
+  margin-right: 2em;
+}
+
+/* line 100, jhStyle2.scss */
+#numOption {
+  float: left;
+  text-align: center;
+  padding-top: .4em;
+}
+
+/* line 106, jhStyle2.scss */
+#textOption {
+  display: inline;
+  text-align: left;
+  float: left;
+  width: auto;
+  color: white;
+  padding-top: .2em;
+}
+
+/* line 115, jhStyle2.scss */
+#textOption legend {
+  width: 1%;
+}
+
+/* line 119, jhStyle2.scss */
+#textLegend, .radioOption {
+  float: left;
+  margin-right: .4em;
+}
+
+/* line 124, jhStyle2.scss */
+#generateButton {
+  clear: both;
+}
+
+/* line 128, jhStyle2.scss */
+#textRadio, #generateButton {
+  padding-top: .5em;
+}
+
+/* line 134, jhStyle2.scss */
+#loremIpsumBox {
+  background-color: white;
+  color: gray;
+}

@@ -1,0 +1,121 @@
+/* line 7, jhStyle.scss */
+body {
+  font: 100% "PT Sans Narrow", sans-serif;
+  background: url(images/pip-background.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+/* line 17, jhStyle.scss */
+.titleBlack {
+  background: black;
+  text-align: left;
+  padding: 20px 20px 20px 0;
+  width: 85%;
+  height: 11em;
+  margin-top: 6em;
+}
+
+/* line 26, jhStyle.scss */
+.wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 5px 0;
+  min-height: 80px;
+}
+
+/* line 35, jhStyle.scss */
+.textContainer {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+
+/* line 41, jhStyle.scss */
+h1, h2 {
+  position: relative;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* line 47, jhStyle.scss */
+h1 {
+  line-height: 0.8;
+  font-size: 9em;
+  font-family: "Yantramanav", sans-serif;
+  letter-spacing: -0.05em;
+  margin-top: .05em;
+  margin-left: -0.06em;
+}
+
+/* line 56, jhStyle.scss */
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* line 61, jhStyle.scss */
+.pink {
+  color: #e34e8b;
+}
+
+/* line 67, jhStyle.scss */
+.formContainer {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+}
+
+/* line 75, jhStyle.scss */
+#movieDropdown {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  color: #636466;
+}
+
+/* line 82, jhStyle.scss */
+.lableText {
+  display: none;
+}
+
+/* line 87, jhStyle.scss */
+#bootstrap-overrides {
+  background-color: transparent !important;
+  color: #636466;
+}
+
+/* line 92, jhStyle.scss */
+#bootstrap-overrides .ui-page-theme-a {
+  text-shadow: none;
+  background-color: transparent !important;
+}
+
+/* line 97, jhStyle.scss */
+#movieDropdown-button, #textRadio {
+  width: 50% !important;
+}
+
+/* line 101, jhStyle.scss */
+#numOption {
+  width: auto !important;
+  text-align: center;
+  float: left;
+}
+
+/* line 107, jhStyle.scss */
+#textOption {
+  width: auto !important;
+}
+
+/* line 112, jhStyle.scss */
+#generateButton {
+  clear: both;
+}

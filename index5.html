@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+    <link rel="stylesheet" href="jhStyle2.css">    
+  
+  </head>
+
+  <body>
+    
+    <div class="titleBlack">
+      <div class="wrapper">
+        <div class="textContainer">
+          <h2>John Hughes</h2>
+          <h1>lorem <span class="pink">ipsum</span></h1>
+        </div>
+      </div>
+    </div>
+    
+    <div class="formContainer"> 
+      
+      <div id="formOptions">
+      
+        <div id="movieSelect>"
+          <label for="movieDropdown"><span class="lableText">Select a movie:</span></label>
+          <select id="movieDropdown" ara-invalid="false" name="movieMenu">
+            <!-- <option disabled selected value>Select A Movie:</option> -->
+            <option value="Pretty In Pink">Pretty In Pink</option>
+            <option value="The Breakfast Club">The Breakfast Club</option>
+            <option value="Don't You Forget About Me">Don't You Forget About Me</option>
+            <option value="Ferris Bueller's Day Off">Ferris Bueller's Day Off</option>
+          </select>
+        </div>
+      
+        <div id="textRadio">
+          <textarea id="numOption" onchange="setNumber()" placeholder="2" > 2 </textarea>
+          
+          <div id="textOption" data-role="fieldcontain">
+              <div id="textLegend">
+                <legend>Choose:</legend>
+              </div>
+              <div class="radioOption">
+                <input type="radio" name="radio-view" id="radio-view-a" value="sentences" onclick="setUnits('sentences')" />
+                <label for="radio-view-a">Sentences</label>
+              </div>
+              <div class="radioOption">
+                <input type="radio" checked name="radio-view" id="radio-view-b" value="paragraphs" onclick="setUnits('paragraphs')" />
+                <label for="radio-view-b">Paragraphs</label>
+              </div>
+          </div>
+        </div>
+        
+        <div id="generateButton">
+          <input type="submit" value="Generate Clever Lorem Ipsum" onclick="getRange()">
+        </div>
+        
+        <div id="loremIpsumBox">
+        </div>
+        
+      </div>
+      
+    </div>
+    
+	<!-- enter the JS -->
+    <script>
+
+      var globalJsonVar; // create global variable for JSON data
+      
+      // random starting point variables
+      var randomStart = 0; // initialize the randomStart variable
+      var tempLimit = 0;
+      var movieIndex = 0; // indexByName(movieSelect) - an attempt to make this more dynamic
+      
+      // user variables
+      var movieSelect = "Pretty In Pink"; // using this movie for testing
+      var unitSelect = "paragraphs"; // usuing this for testing - could be paragraphs or lines
+      var numberSelect = 2; // using 2 for testing
+      
+      //set the type of output, sentences or paragraphs
+      function setUnits(u) {
+	      unitSelect = u;
+	      console.log(unitSelect);
+      }
+      
+      //when the user changes the number of unit, this changes that variable
+      function setNumber() {
+	      numberSelect = container.querySelector('numOption');
+	      console.log(numberSelect);
+      }
+
+      function indexByName() { //translate names to index values - para was 'movieName'
+        if (movieSelect == "Pretty In Pink") {
+          movieIndex = 0;
+        } else if (movieSelect == "Ferris Buelluer's Day Off") {
+          movieIndex = 1;
+        }
+      } 
+      
+      function writeParagraphs() { // an attempt to write data based on user vars
+        for (var x = randomStart; x < (numberSelect + randomStart); x++) {
+          var tempData = globalJsonVar[movieIndex].paragraphs[x];
+          console.log ("x = " + x); // testing random variable
+          tempData = tempData.join(" "); // remove the commas from the output          
+          document.getElementById("loremIpsumBox").innerHTML += ("<br/>" + tempData + "<br/>"); // puts the words in the div
+        }
+      }
+        
+      function grabJSON() { // function to grab the JSON and create the array
+        $.getJSON("movie-text.json", function(json) {
+          globalJsonVar = json; // this creates the json data object inside the globalJsonVar
+          // button does this now getRange(); //get a random number to start at within a range
+        });
+      }
+      
+      function getRange() { //create a random starting point, based on movie, type and number of units requested
+        
+        tempLimit = globalJsonVar[movieIndex].paragraphs.length; // I need the length or number of paragraphs in the movie selected
+
+        //Math.random() * (max - min) + min; - random number between two values
+        randomStart = Math.floor((Math.random() * (tempLimit - numberSelect))); // generate random number between 0 and max units
+		console.log ("tempLimit = " + tempLimit);
+        console.log ("randomStart = " + randomStart);
+        console.log ("movieIndex = " + movieIndex);
+        
+        //put the words on the screen
+        writeParagraphs(); // put paragraphs onto page
+      }
+      
+      </script>
+      
+      <! -- run that stuff -->
+      
+      <script>
+        grabJSON(); // get the data
+        indexByName(); // create index number based on name
+      </script>
+    
+  </body>
+</html>

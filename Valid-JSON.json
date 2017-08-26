@@ -1,0 +1,55 @@
+[
+  {
+    "movie": "Pretty In Pink",
+    "paragraphs": [ 
+      [
+        "Daddy, it's 7.30!",
+        "Daddy, it's 7.30!",
+        "Daddy, wake up!",
+        "Morning, Daddy. Come on, wake up!",
+        "Wake up!",
+        "Come on, wake up."
+      ],
+      [
+        "There's your coffee right there.",
+        "Where am I?",
+        "Here, I want you to drink this.",
+        "Then take a shower and get dressed.",
+        "Your clothes are there.",
+        "Then I want you to see the woman about the job.",
+        "Today.",
+        "You promised.",
+        "I know."
+      ]
+    ]
+  },
+  
+  {
+    "movie": "Ferris Bueller's Day Off",
+    "paragraphs": [
+      [
+        "It is a beautiful day in Chicago.",
+        "Temperatures in the upper 70's.",
+        "Right now, 75 at the lakefront, 74 at Midway, 73 at O'Hare."
+      ],
+      [
+        "Tom!",
+        "What's the matter?",
+        "It's Ferris Look at him.",
+        "Ferris?",
+        "He doesn't have a fever, but his stomach hurts and he's seeing spots."
+      ],
+      [
+        "What's the matter, Ferris?",
+        "Papa?",
+        "Feel his hands, they're cold and clammy.",
+        "I'm fine I'll get up.",
+        "No!",
+        "I have a test today.",
+        "No.",
+        "I must take it I want to go to a good college, so I can have a fruitful life.",
+        "Honey, you're not going to school like this."
+      ]
+    ]
+  }
+]

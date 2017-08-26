@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    
+    <h1>Testing JSON data flow</h1>
+    
+    <script>
+
+      var globalJsonVar; // create global variable for JSON data
+
+      function liveData() { // function to show the live data
+        console.log(globalJsonVar); // spit out data to console
+      }
+
+      function grabJSON() { // function to grab the JSON and create the array
+        $.getJSON("movie-text.json", function(json) {
+        globalJsonVar = json; // this is supposed to create the json data object
+        });
+        liveData();
+      }
+      
+    </script>
+    
+    <p id="demo">Something should go here and replace this.</p>
+
+    <script>
+      grabJSON();
+
+      document.getElementById("demo").innerHTML = globalJsonVar;
+    
+      document.write("All the Datas:<p>");
+      for (var i = 0; i < globalJsonVar.length; i++) {
+        document.write(i + 1 + ". " + globalJsonVar[i] + "<br>");
+      }
+      document.write('</p>');
+      
+    </script>
+        
+  </body>
+</html>

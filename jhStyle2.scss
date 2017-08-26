@@ -1,0 +1,137 @@
+$font-stack: 'PT Sans Narrow', sans-serif;
+$font-pink: 'Yantramanav', sans-serif;
+$primary-color: #636466;
+$title-color: white;
+$pink-color: #E34E8B;
+
+body {
+  font: 100% $font-stack;
+  background: url(images/pip-background.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  background-color: $pink-color;  
+}
+
+.titleBlack {
+  background: black;
+  text-align: left;
+  padding: 20px 20px 20px 0;
+  width: 85%;
+  height: 11em;
+  margin-top: 6em;
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 5px 0;
+  min-height: 80px;
+}
+
+.textContainer {
+  position: absolute;
+  right: 20%;
+  top: 10%
+}
+
+h1, h2 {
+  position: relative;
+  margin: 0;
+  color: #ffffff;
+}
+
+h1 {
+  line-height: 0.8;
+	font-size: 9em;
+	font-family: $font-pink;
+	letter-spacing: -.05em;
+	margin-top: .05em;
+	margin-left: -.06em;
+}
+
+h2 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.pink {
+	color: $pink-color;
+}
+
+// form styling
+
+.formContainer {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 75%;
+}
+
+#movieDropdown {
+  //height: 40px;
+  width: 75%;
+  //background-color: $title-color;
+  //color: $primary-color;
+}
+
+#textRadio {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#textRadio textarea {
+  resize: none;
+  height: 1.4em;
+  margin-right: 2em;
+}
+
+.lableText {
+	//display: none;
+}
+
+#numOption {
+  float: left;
+  text-align: center;
+  padding-top: .4em;
+}
+
+#textOption {
+  display: inline;
+  text-align: left;
+  float: left;
+  width: auto;
+  color: white;
+  padding-top: .2em;
+}
+
+#textOption legend {
+  width: 1%;
+}
+
+#textLegend, .radioOption {
+  float: left;
+  margin-right: .4em;
+}
+
+#generateButton {
+  clear: both;
+}
+
+#textRadio, #generateButton {
+  padding-top: .5em;
+}
+
+// where the lorem ipsum goes
+
+#loremIpsumBox {
+	background-color: white;
+	color: gray;
+}
