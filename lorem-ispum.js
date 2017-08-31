@@ -13,7 +13,7 @@ var stringData = new Array(); // create array for lines
 var movieSelect = "Pretty In Pink"; // using this movie for testing
 var unitSelect = "paragraphs"; // usuing this for testing - could be paragraphs or lines
 var numberSelect = 2; // using 10 for testing
-var lineCount = 50; // how many lines in the movie selected
+// var lineCount = 50; // how many lines in the movie selected
 
 //which movie are we pulling text from
 function indexByName() { //translate names to index values - para was 'movieName'
@@ -24,8 +24,8 @@ function indexByName() { //translate names to index values - para was 'movieName
   }
 } 
   
-// function to test the live data 
-function liveDataTest() {
+// function to load the movie data 
+function loadMovieData() {
   console.log("start liveDataTest");
   // temp variables for testing
   var prefix = "Movie ";
@@ -38,7 +38,7 @@ function liveDataTest() {
   }
   
   //OK - Let's put some sentences on the screen
-  writeSentences();
+  //writeSentences();
 }
   
 // write sentences instead of paragrapghs
@@ -109,13 +109,17 @@ function getXLinesStartingAtParagraphY(numberOfLines, firstParagraphIndex) {
 function grabJSON() {
   $.getJSON("movie-text.json", function(json) {
     globalJsonVar = json; // this creates the json data object inside the globalJsonVar
-    liveDataTest(); // trigger something to write the data
-    // getRange(); //get a random number to start at within a range
+    loadMovieData(); // trigger function to load the movie data
   });
 }
 
 //create a random starting point, based on movie, type and number of units requested
-function getRange() {        
+function getRange() {
+  
+  //get the number from user input field
+  numberSelect = document.getElementById("numOption").value;
+  console.log("numberSelect = " + numberSelect);
+      
   tempLimit = globalJsonVar[movieIndex].paragraphs.length; // I need the length or number of paragraphs in the movie selected
 
   //Math.random() * (max - min) + min; - random number between two values
@@ -138,12 +142,19 @@ function lineCounter() {
 
 //JS FROM v5 HTML
 
-function writeParagraphs() { // an attempt to write data based on user vars
-  for (var x = randomStart; x < (numberSelect + randomStart); x++) {
-    var tempData = globalJsonVar[movieIndex].paragraphs[x];
-    console.log ("x = " + x); // testing random variable
+// write text to page based on user vars
+function writeParagraphs() {
+  //clear text in box first
+  document.getElementById("loremIpsumBox").innerHTML = (""); // empty the div
+  
+  var t = randomStart; // temp var to hold the random starting point
+
+  for (var x = 0; x < numberSelect; x++) {
+    var tempData = globalJsonVar[movieIndex].paragraphs[t];
+    console.log ("t = " + t); // testing random variable
     tempData = tempData.join(" "); // remove the commas from the output          
     document.getElementById("loremIpsumBox").innerHTML += ("<br/>" + tempData + "<br/>"); // puts the words in the div
+    t++; //increment t to keep the loop going
   }
 }
 
