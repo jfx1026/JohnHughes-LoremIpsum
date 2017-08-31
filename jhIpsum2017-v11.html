@@ -47,25 +47,13 @@
         var suffix = "!!! <br/>";
         
         for (var i = 0; i < globalJsonVar.length; i++) {
-          document.write(prefix + i + ": " + globalJsonVar[i].movie + suffix);
+          //document.write(prefix + i + ": " + globalJsonVar[i].movie + suffix);
+          console.log("LOADED JSON - SEE BELOW");
+          console.log(globalJsonVar);
         }
         
-        console.log(globalJsonVar); // spit out data to console
-        
-        //start actualDataTest
-        //actualDataTest(); //this seems to work
+        //OK - Let's put some sentences on the screen
         writeSentences();
-      }
-      
-      // an attempt to write data based on user vars
-      function actualDataTest() {
-        console.log("start actualDataTest");
-        for (var x = randomStart; x < (numberSelect + randomStart); x++) {
-          var tempData = globalJsonVar[movieIndex].paragraphs[x];
-          console.log ("x = " + x); // testing random variable
-          tempData = tempData.join(" "); // remove the commas from the output
-          document.write("<br/>" + tempData + "<br/>");
-        }
       }
         
       // write sentences instead of paragrapghs
@@ -99,8 +87,6 @@
               stringData.push(tempData); // add new string to array
               lineCounterResult++;
             }
-            
-            
           }
 
         stringData = stringData.join(" "); // remove the commas from the output    
@@ -113,52 +99,6 @@
           
         } 
       }  
-        
-/* FROM GONEN
-      Function getXLinesStartingAtParagraphY(numberOfLines, firstParagraphIndex)
-      outputLineCounter = 0
-      outputLines = “"
-      current_paragraph_index = firstParagraphIndex
-      While(outputLineCounter < numberOfLines) 
-      currentParagraph = paragraphs[current_paragraph_index]
-      lineInParagraph  = 0
-      While(lineInParagraph < length(currentParagraph)  
-*/
-        
-        /* FROM GONEN V2
-      Function getXLinesStartingAtParagraphY(numberOfLines, firstParagraphIndex)
-      outputLineCounter = 0
-      outputLines = ""
-      current_paragraph_index = firstParagraphIndex
-      
-      While(outputLineCounter < numberOfLines) 
-        currentParagraph = paragraphs[current_paragraph_index]
-        lineInParagraph  = 0
-        While(lineInParagraph < length(currentParagraph))
-            outputLines = outputLines + currentParagraph[current_paragraph_index]
-            current_paragraph_index = current_paragraph_index + 1
-            outputLineCounter = outputLineCounter + 1
-        
-*/
-
-/* form FreeCodeCamp - this is essentially the same concept
-	function largestOfFour(arr) {
-  var largestNums = [0,0,0,0];
-  
-  for(var arrayIndex = 0; arrayIndex < arr.length; arrayIndex++) {
-
-    for(var subArrayIndex = 0; subArrayIndex < arr[arrayIndex].length; subArrayIndex++) {      
-       if(arr[arrayIndex][subArrayIndex] > largestNums[arrayIndex]) {
-          
-          largestNums[arrayIndex] = arr[arrayIndex][subArrayIndex];
-       }
-    }
-  }
-  return largestNums;
-}
-
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
-*/
         
       function getXLinesStartingAtParagraphY(numberOfLines, firstParagraphIndex) {
           var outputLineCounter = 0; 
@@ -180,7 +120,8 @@ largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 85
           return outputLines;
       }
         
-      function grabJSON() { // function to grab the JSON and create the array
+      // function to grab the JSON and create the array  
+      function grabJSON() {
         $.getJSON("movie-text.json", function(json) {
           globalJsonVar = json; // this creates the json data object inside the globalJsonVar
           liveDataTest(); // trigger something to write the data
@@ -188,7 +129,8 @@ largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 85
         });
       }
       
-      function getRange() { //create a random starting point, based on movie, type and number of units requested
+      //create a random starting point, based on movie, type and number of units requested
+      function getRange() {
         if (unitSelect == "paragraphs") {
           tempLimit = globalJsonVar[movieIndex].paragraphs.length; // I need the length or number of paragraphs in the movie selected
         } else if (unitSelect == "sentences") {
@@ -204,7 +146,8 @@ largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 85
         getXLinesStartingAtParagraphY(numberSelect, randomStart)
       }
       
-      function lineCounter() { // count how mnay lines are in the selected movie
+      // count how mnay lines are in the selected movie
+      function lineCounter() {
         for (var count = 0; count < tempLimit; count++) {
           lineCount = lineCount + globalJsonVar[movieIndex].paragraphs[count].length;
         }
