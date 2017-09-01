@@ -13,7 +13,7 @@ var stringData = new Array(); // create array for lines
 var movieSelect = "Pretty In Pink"; // using this movie for testing
 var unitSelect = "paragraphs"; // usuing this for testing - could be paragraphs or lines
 var numberSelect = 2; // using 10 for testing
-// var lineCount = 50; // how many lines in the movie selected
+var lineCount = 2; // how many lines in the movie selected
 
 //which movie are we pulling text from
 function indexByName() { //translate names to index values - para was 'movieName'
@@ -26,34 +26,40 @@ function indexByName() { //translate names to index values - para was 'movieName
   
 // function to load the movie data 
 function loadMovieData() {
-  console.log("start liveDataTest");
+  console.log("start loading movie data");
   // temp variables for testing
-  var prefix = "Movie ";
-  var suffix = "!!! <br/>";
   
   for (var i = 0; i < globalJsonVar.length; i++) {
-    //document.write(prefix + i + ": " + globalJsonVar[i].movie + suffix);
-    console.log("LOADED JSON - SEE BELOW");
+    console.log("movie data loaded - see array below");
     console.log(globalJsonVar);
   }
-  
-  //OK - Let's put some sentences on the screen
-  //writeSentences();
+
+  //start movieCount function
+  movieCount();
 }
   
 // write sentences instead of paragrapghs
 function writeSentences() {
-  //lineCounter(); // start line counter for sentences - this should be smarter - NOT CURRENTLY WORKING
-
+  
   var lineCounterResult = 0; // count the number of lines read
+  console.log("Checking lineCounter value = " + lineCounterResult);
+
   tempData = ""; // reset tempData var
   
-  console.log("Checking lineCounter value = " + lineCounterResult);
-  for (var x = randomStart; x < (numberSelect + lineCount); x++) {
+  //clear text in box first
+  document.getElementById("loremIpsumBox").innerHTML = (""); // empty the div
+  
+  //make numberSelect a number
+  numberSelect = parseInt(numberSelect, 10);
+  console.log("testing parseInt = " + numberSelect);
+  
+  var rS = randomStart; // temp var to hold the random starting point
+  
+  for (var x = 0; x < numberSelect; x++) {
     console.log("lineCounterResult = " + lineCounterResult);
     var tempStart = randomStart; //adding a temp var to grab the starting point
     
-    for (var z = 0 ; z < globalJsonVar[movieIndex].paragraphs[z].length; z++) { // begin loop on first selected paragraph
+    for (var z = 0 ; z < globalJsonVar[movieIndex].paragraphs[rS].length; z++) { // begin loop on first selected paragraph
       //add new line after each paragraph
       if (z !== 0) {
           console.log("NEW LINE!!!");
@@ -64,18 +70,23 @@ function writeSentences() {
       console.log("-- -- TESTING Sentence Writer -- --");
       console.log("lineCounterResult = " + lineCounterResult);
       console.log("numberSelect = " + numberSelect);
-      console.log("number of lines in current paragraph = " + globalJsonVar[movieIndex].paragraphs[z].length);
+      console.log("number of lines in current paragraph = " + globalJsonVar[movieIndex].paragraphs[rS].length);
       
-      for (s = 0; s < globalJsonVar[movieIndex].paragraphs[z].length && lineCounterResult < lineCount; s++) {
+      for (s = 0; s < globalJsonVar[movieIndex].paragraphs[rS].length && lineCounterResult < lineCount; s++) {
         console.log("lineCounterResult = " + lineCounterResult);
-        var tempData = (globalJsonVar[movieIndex].paragraphs[randomStart+z][s] + " ");  // grab a line from the randomStart paragraph
+        var tempData = (globalJsonVar[movieIndex].paragraphs[rS+z][s] + " ");  // grab a line from the randomStart paragraph
         stringData.push(tempData); // add new string to array
         lineCounterResult++;
       }
+      
+      rS++; //increment rS to keep the loop going
+
     }
 
-  stringData = stringData.join(" "); // remove the commas from the output    
+  stringData = stringData.join(" "); // remove the commas from the output
   //-- TEMP REMOVE -- document.write(stringData + " ");
+  document.getElementById("loremIpsumBox").innerHTML += ("<br/>" + stringData + "<br/>"); // puts the words in the div
+  
   
   //stop this function - NOT STOPPING IT
   if (lineCounterResult > lineCount) {
@@ -129,7 +140,11 @@ function getRange() {
   console.log ("movieIndex = " + movieIndex);
         
   //put the words on the screen
-  writeParagraphs(); // put paragraphs onto page
+  if (unitSelect == "paragraphs") {
+    writeParagraphs(); // start paragraphs function
+  } else {
+    writeSentences(); // start sentences function
+  }
 }
 
 // count how mnay lines are in the selected movie
@@ -147,15 +162,21 @@ function writeParagraphs() {
   //clear text in box first
   document.getElementById("loremIpsumBox").innerHTML = (""); // empty the div
   
-  var t = randomStart; // temp var to hold the random starting point
+  var rP = randomStart; // temp var to hold the random starting point
 
   for (var x = 0; x < numberSelect; x++) {
-    var tempData = globalJsonVar[movieIndex].paragraphs[t];
+    var tempData = globalJsonVar[movieIndex].paragraphs[rP];
     console.log ("t = " + t); // testing random variable
     tempData = tempData.join(" "); // remove the commas from the output          
     document.getElementById("loremIpsumBox").innerHTML += ("<br/>" + tempData + "<br/>"); // puts the words in the div
-    t++; //increment t to keep the loop going
+    rP++; //increment rP to keep the loop going
   }
+}
+
+//set the type of output, sentences or paragraphs
+function setUnits(u) {
+  unitSelect = u;
+  console.log("Paragraphs or Sentences? --> " + unitSelect);
 }
 
 //START THE PROCESS
