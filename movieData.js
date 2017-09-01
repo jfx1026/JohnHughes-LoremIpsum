@@ -12,7 +12,24 @@ function movieCount() {
   }
   
   console.log("lCount: total number of paragraphs in selected movie = " + lCount);
+}
 
+function changeMovie() {
+  console.log("changeMovie tiggered!!!")
+  
+  //grab text from dropdown
+  var tempM = $("#movieDropdown option:selected").text();
+  console.log("tempM = " + tempM);
+  
+  movieSelect = tempM;
+
+  if (movieSelect == "Pretty In Pink") {
+    movieIndex = 0;
+  } else if (movieSelect == "Ferris Bueller's Day Off") {
+    movieIndex = 1;
+  }
+  console.log("Selected Movie = " + movieSelect);
+  console.log("movieIndex = " + movieIndex);
 }
 
 // GENERATOR FUNCTIONS

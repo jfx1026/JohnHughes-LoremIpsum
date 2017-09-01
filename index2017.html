@@ -35,14 +35,14 @@
       
       <div id="formOptions">
       
-        <div id="movieSelect>"
+        <div id="movieSelect"
           <label for="movieDropdown"><span class="lableText">Select a movie:</span></label>
-          <select id="movieDropdown" ara-invalid="false" name="movieMenu">
+          <select id="movieDropdown" ara-invalid="false" name="movieMenu" onmousedown="this.value=''; " onchange="changeMovie(this.value);">
             <!-- <option disabled selected value>Select A Movie:</option> -->
             <option value="Pretty In Pink">Pretty In Pink</option>
+            <option value="Ferris Bueller's Day Off">Ferris Bueller's Day Off</option>
             <option value="The Breakfast Club">The Breakfast Club</option>
             <option value="Don't You Forget About Me">Don't You Forget About Me</option>
-            <option value="Ferris Bueller's Day Off">Ferris Bueller's Day Off</option>
           </select>
         </div>
       

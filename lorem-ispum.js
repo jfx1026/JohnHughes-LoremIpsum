@@ -36,18 +36,11 @@ function loadMovieData() {
   movieCount();
 }
 
-// which movie are we pulling text from
-function indexByName() { //translate names to index values - para was 'movieName'
-  if (movieSelect == "Pretty In Pink") {
-    movieIndex = 0;
-  } else if (movieSelect == "Ferris Buelluer's Day Off") {
-    movieIndex = 1;
-  }
-  console.log("Selected Movie = " + movieSelect);
-}
-
 //create a random starting point, based on movie, type and number of units requested then start the function to write the text to the 
 function getRange() {
+  
+  //start changeMovie function to grab movieSelect index
+  changeMovie();
   
   //get the number from user input field
   numberSelect = document.getElementById("numOption").value;
@@ -94,6 +87,3 @@ function setUnits(u) {
 
 // get the data
 grabJSON();
-
-// create index number for which movie based on name
-indexByName();
