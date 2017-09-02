@@ -5,7 +5,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 0; }
+  margin: 0;
+  background-color: #E34E8B; }
 
 .titleBlack {
   background: black;
@@ -45,7 +46,7 @@ h2 {
   font-size: 1.2em;
   text-transform: uppercase; }
 
-.pink {
+.pinkTitle {
   color: #E34E8B; }
 
 .formContainer {
@@ -56,34 +57,64 @@ h2 {
   width: 75%; }
 
 #movieDropdown {
-  height: 40px;
-  width: 100%;
-  background-color: white;
-  color: #636466; }
+  width: 75%; }
 
-.lableText {
-  display: none; }
+#textRadio {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
 
-#bootstrap-overrides {
-  background-color: transparent !important;
-  color: #636466; }
-
-#bootstrap-overrides .ui-page-theme-a {
-  text-shadow: none;
-  background-color: transparent !important; }
-
-#movieDropdown-button, #textRadio {
-  width: 50% !important; }
+#textRadio textarea {
+  resize: none;
+  height: 1.4em;
+  margin-right: 2em; }
 
 #numOption {
-  width: auto !important;
+  float: left;
   text-align: center;
-  float: left; }
+  padding-top: .4em; }
 
 #textOption {
-  width: auto !important; }
+  display: inline;
+  text-align: left;
+  float: left;
+  width: auto;
+  color: white;
+  padding-top: .2em; }
+
+#textOption legend {
+  width: 1%; }
+
+#textLegend, .radioOption {
+  float: left;
+  margin-right: .4em; }
 
 #generateButton {
   clear: both; }
 
-/*# sourceMappingURL=jhStyle.css.map */
+#textRadio, #generateButton {
+  padding-top: .5em; }
+
+#loremIpsumBox {
+  background-color: white;
+  color: gray; }
+
+.styled-select {
+  background: transparent;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+  margin: 20px;
+  color: #fff !important; }
+
+.semi-square {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-color: grey; }
+
+.pink {
+  background-color: #E34E8B; }
+
+/*# sourceMappingURL=jhStyle2.css.map */
