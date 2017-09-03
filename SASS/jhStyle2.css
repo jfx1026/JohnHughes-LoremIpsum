@@ -1,6 +1,6 @@
 body {
   font: 100% "PT Sans Narrow", sans-serif;
-  background: url(images/pip-background.jpg) no-repeat center;
+  background: url(images/pip-background.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -137,5 +137,50 @@ h2 {
 #buttonIpsum:hover {
   background: #de005d;
   text-decoration: none; }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 7em; }
+
+  .titleBlack {
+    height: 9em; } }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 6em; }
+
+  .titleBlack {
+    height: 8em; } }
+@media (max-width: 680px) {
+  body {
+    background: url(images/pip-background-p.png) no-repeat center;
+    background-color: #E34E8B; }
+
+  h1 {
+    font-size: 4em; }
+
+  .titleBlack {
+    height: 6em; }
+
+  #movieDropdown {
+    width: 50%; } }
+@media (max-width: 450px) {
+  body {
+    background: url(images/pip-background-p.png) no-repeat center;
+    background-color: #E34E8B; }
+
+  h1 {
+    font-size: 3em; }
+
+  .titleBlack {
+    height: 4.75em; }
+
+  #movieDropdown {
+    width: 50%; }
+
+  .formContainer {
+    margin-top: .5em; }
+
+  #buttonIpsum {
+    padding: 5px 10px 5px 10px; } }
 
 /*# sourceMappingURL=jhStyle2.css.map */
