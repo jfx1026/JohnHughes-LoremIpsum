@@ -14,7 +14,7 @@ function movieCount() {
   console.log("lCount: total number of paragraphs in selected movie = " + lCount);
 }
 
-function changeMovie() {
+function changeMovie() {  
   console.log("changeMovie tiggered!!!")
   
   //grab text from dropdown
@@ -25,11 +25,23 @@ function changeMovie() {
 
   if (movieSelect == "Pretty In Pink") {
     movieIndex = 0;
+    swapStyleSheet("jhStyle2.css");
   } else if (movieSelect == "Ferris Bueller's Day Off") {
     movieIndex = 1;
+    swapStyleSheet("ferris.css");
   }
   console.log("Selected Movie = " + movieSelect);
   console.log("movieIndex = " + movieIndex);
+  
+   
+  //clear text in box first
+  document.getElementById("loremIpsumBox").innerHTML = (""); // empty the div
+
+}
+
+// CSS Style Sheet swap function
+function swapStyleSheet(sheet) {
+    document.getElementById("pagestyle").setAttribute("href", sheet);  
 }
 
 // GENERATOR FUNCTIONS

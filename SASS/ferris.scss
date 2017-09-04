@@ -1,12 +1,17 @@
-$font-stack: 'PT Sans Narrow', sans-serif;
-$font-pink: 'Yantramanav', sans-serif;
+//font-family: 'Bowlby One SC', cursive;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Yantramanav', sans-serif;
+//font-family: 'PT Sans Narrow', sans-serif;
+
+$font-stack: 'Open Sans', sans-serif;
+$font-pink: 'Bowlby One SC', sans-serif;
 $primary-color: #636466;
-$title-color: white;
-$pink-color: #E34E8B;
+$title-color: black;
+$pink-color: white;
 
 body {
   font: 100% $font-stack;
-  background: url(images/pip-background.png) no-repeat center;
+  background: url(images/ferris-background.png) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,59 +21,76 @@ body {
 }
 
 .titleBlack {
-  background: black;
-  text-align: left;
-  padding: 20px 20px 20px 0;
-  width: 85%;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 20px 20px 0 0;
+  width: 100%;
   height: 11em;
-  margin-top: 6em;
+  margin-top: 0.5em;
 }
 
 .wrapper {
   display: inline-block;
   position: relative;
-  text-align: left;
+  text-align: center;
   width: 100%;
   padding: 5px 0;
   min-height: 80px;
 }
 
 .textContainer {
-  position: absolute;
-  right: 20%;
+  position: relative;
+  right: 0;
   top: 10%
 }
 
 h1, h2 {
   position: relative;
   margin: 0;
-  color: #ffffff;
+  color: $title-color;
+  font-family: $font-pink; 
 }
 
 h1 {
   line-height: 0.8;
-	font-size: 9em;
-	font-family: $font-pink;
-	letter-spacing: -.05em;
-	margin-top: .05em;
-	margin-left: -.06em;
-	text-transform: none;
+	font-size: 6em;
+	letter-spacing:0;
+	margin-top: .2em;
+	margin-left: 0;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
 h2 {
 	font-size: 1.2em;
 	text-transform: uppercase;
-	color: $title-color;	
+	color: red;
+	background-color: red;
+}
+
+h2:before {
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 15px; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+h2 span {
+  background: white;
+  padding: .75em;
+  border: white solid .02em;
 }
 
 .pinkTitle {
-	color: $pink-color;
+	color: $title-color;
 }
 
 // form styling
 
 .formContainer {
-  margin-top: 2em;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -76,6 +98,7 @@ h2 {
 }
 
 #movieDropdown {
+  font: $font-stack;
   //height: 40px;
   width: 75%;
   //background-color: $title-color;
@@ -121,6 +144,7 @@ h2 {
 #textLegend, .radioOption {
   float: left;
   margin-right: .4em;
+  color: red;
 }
 
 #generateButton {
@@ -152,7 +176,7 @@ h2 {
   overflow: hidden;
   width: 240px;
   margin: 20px;
-  color: #fff !important;
+  color: #000 !important;
   font-family: $font-stack;
   font-size: 1em;
 }
@@ -176,14 +200,14 @@ h2 {
   border-radius: 5px;
   color: #ffffff;
   font-family: $font-stack;
-  background: $pink-color;
+  background: gray;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   font-size: 1em;
 }
 
 #buttonIpsum:hover {
-  background: #de005d;
+  background: red;
   text-decoration: none;
 }
 

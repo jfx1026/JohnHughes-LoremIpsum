@@ -1,64 +1,83 @@
 body {
-  font: 100% "PT Sans Narrow", sans-serif;
-  background: url(images/pip-background.png) no-repeat center;
+  font: 100% "Open Sans", sans-serif;
+  background: url(images/ferris-background.png) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
-  background-color: #E34E8B; }
+  background-color: white; }
 
 .titleBlack {
-  background: black;
-  text-align: left;
-  padding: 20px 20px 20px 0;
-  width: 85%;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 20px 20px 0 0;
+  width: 100%;
   height: 11em;
-  margin-top: 6em; }
+  margin-top: 0.5em; }
 
 .wrapper {
   display: inline-block;
   position: relative;
-  text-align: left;
+  text-align: center;
   width: 100%;
   padding: 5px 0;
   min-height: 80px; }
 
 .textContainer {
-  position: absolute;
-  right: 20%;
+  position: relative;
+  right: 0;
   top: 10%; }
 
 h1, h2 {
   position: relative;
   margin: 0;
-  color: #ffffff; }
+  color: black;
+  font-family: "Bowlby One SC", sans-serif; }
 
 h1 {
   line-height: 0.8;
-  font-size: 9em;
-  font-family: "Yantramanav", sans-serif;
-  letter-spacing: -.05em;
-  margin-top: .05em;
-  margin-left: -.06em;
-  text-transform: none; }
+  font-size: 6em;
+  letter-spacing: 0;
+  margin-top: .2em;
+  margin-left: 0;
+  text-transform: uppercase;
+  font-weight: normal; }
 
 h2 {
   font-size: 1.2em;
   text-transform: uppercase;
-  color: white; }
+  color: red;
+  background-color: red; }
+
+h2:before {
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1; }
+
+h2 span {
+  background: white;
+  padding: .75em;
+  border: white solid .02em; }
 
 .pinkTitle {
-  color: #E34E8B; }
+  color: black; }
 
 .formContainer {
-  margin-top: 2em;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 75%; }
 
 #movieDropdown {
+  font: "Open Sans", sans-serif;
   width: 75%; }
 
 #textRadio {
@@ -89,7 +108,8 @@ h2 {
 
 #textLegend, .radioOption {
   float: left;
-  margin-right: .4em; }
+  margin-right: .4em;
+  color: red; }
 
 #generateButton {
   clear: both; }
@@ -112,8 +132,8 @@ h2 {
   overflow: hidden;
   width: 240px;
   margin: 20px;
-  color: #fff !important;
-  font-family: "PT Sans Narrow", sans-serif;
+  color: #000 !important;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em; }
 
 .semi-square {
@@ -123,21 +143,21 @@ h2 {
   border-color: grey; }
 
 .pink {
-  background-color: #E34E8B; }
+  background-color: white; }
 
 #buttonIpsum {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
   color: #ffffff;
-  font-family: "PT Sans Narrow", sans-serif;
-  background: #E34E8B;
+  font-family: "Open Sans", sans-serif;
+  background: gray;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   font-size: 1em; }
 
 #buttonIpsum:hover {
-  background: #de005d;
+  background: red;
   text-decoration: none; }
 
 @media (max-width: 1024px) {
@@ -155,7 +175,7 @@ h2 {
 @media (max-width: 680px) {
   body {
     background: url(images/pip-background-p.png) no-repeat center;
-    background-color: #E34E8B; }
+    background-color: white; }
 
   h1 {
     font-size: 4em; }
@@ -168,7 +188,7 @@ h2 {
 @media (max-width: 450px) {
   body {
     background: url(images/pip-background-p.png) no-repeat center;
-    background-color: #E34E8B; }
+    background-color: white; }
 
   h1 {
     font-size: 3em; }
@@ -185,4 +205,4 @@ h2 {
   #buttonIpsum {
     padding: 5px 10px 5px 10px; } }
 
-/*# sourceMappingURL=jhStyle2.css.map */
+/*# sourceMappingURL=ferris.css.map */
