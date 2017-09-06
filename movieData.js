@@ -29,6 +29,9 @@ function changeMovie() {
   } else if (movieSelect == "Ferris Bueller's Day Off") {
     movieIndex = 1;
     swapStyleSheet("ferris.css");
+  } else if (movieSelect == "The Breakfast Club") {
+    movieIndex = 2;
+    swapStyleSheet("breakfast.css");
   }
   console.log("Selected Movie = " + movieSelect);
   console.log("movieIndex = " + movieIndex);
