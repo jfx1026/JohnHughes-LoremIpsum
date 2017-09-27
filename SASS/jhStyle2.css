@@ -106,6 +106,19 @@ h2 {
   color: gray;
   padding: 0; }
 
+#info {
+  text-align: right;
+  margin-right: 0.5em;
+  margin-top: 0.5em; }
+
+.fa {
+  color: white;
+  opacity: 0.5; }
+
+.fa:hover {
+  opacity: 1;
+  cursor: pointer; }
+
 .styled-select {
   background: transparent;
   height: 29px;

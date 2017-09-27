@@ -144,6 +144,23 @@ h2 {
 	padding: 0;
 }
 
+//info and modal
+#info {
+  text-align: right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.fa {
+  color: $title-color;
+  opacity: 0.5;
+}
+
+.fa:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 // drop down menu
 
 .styled-select {
