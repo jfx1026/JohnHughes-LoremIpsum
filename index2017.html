@@ -22,6 +22,7 @@
     <!-- LOAD CSS -->    
     <link id="pagestyle" rel="stylesheet" title="pink" href="jhStyle2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.2/jquery.modal.css">
+    <link rel="stylesheet" href="modal.css">
         
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,13 +32,30 @@
     
     <!-- Modal HTML embedded directly into document -->
     <div class="modal" id="ex1" style="display:none;">
-      <p>Thanks for clicking. That felt good. <br />Click <a href="#" rel="modal:close">close</a>, click the overlay, or press ESC</p>
+      <div class="modalTitle">
+        <h1>the John Hughes Lorem Ipsum Generator</h1>
+        <h2>by John Freeborn</h2>
+      </div>
+      
+      <div class="modalDetails">
+        <p>This project was directly inspired by the amazing (and sadly defunct) Jurassic Park Lorem Ispum Generator. I wanted to create something like that, but with a few more bells and whistles. I also wanted to use this project as a tool to learn javascript, gitHub and to expand my skills on the front-end web development side of things.</p>
+        <p>This project is available on gitHub for you to use, modify and improve. If you make something awesome with what I started here, please share it with me @jfx1026 on Twitter. I've tried to document how this works so that anyone with a little know how can take what I've built and create their own lorem ipsum generator. If you are into Seinfeld, and you are willing to format the scripts into JSON, then you could make that happen. Maybe you are more of an X-Files nerd, go to it.</p>
+        <p>Thanks for checking this out. Share it and please use this in all of your dummy text situations–it's so much better than boring old latin.</p>
+      </div>
+      
+      <hr>
+      
+      <div class="modalTitle">
+        <h3>This project has been a labor of love from a fan of the late, great John Hughes and I make no claim of ownership on anything that he created, wrote or developed. This is for entertainment... ya know, fun.</h3>
+      </div>
     </div>
-    
+
+    <!-- Help/Info button -->    
     <div id="info">
       <a href="#ex1" rel="modal:open"><i class="fa fa-question-circle-o fa-2x" aria-hidden="true"></i></a>
     </div>
-    
+
+    <!-- The page contents --> 
     <div class="titleBlack">
       <div class="wrapper">
         <div class="textContainer">

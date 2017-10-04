@@ -1,0 +1,35 @@
+.modal {
+  max-width: none;
+  width: 85%;
+}
+
+.modalTitle h1 {
+  color: black;
+  font-size: 2em;
+  line-height: normal;
+  letter-spacing: .05em;  
+}
+
+.modalTitle h2 {
+  color: gray;
+  font-size: 1em;
+  line-height: 1.2em;
+  text-transform: none;
+  width: 65%;
+  line-height: 1.4em;
+}
+
+.modalTitle h3 {
+  color: gray;
+  font-size: 1em;
+  line-height: 1.2em;
+  text-transform: none;
+  width: 50%;
+  line-height: 1.4em;
+}
+
+.modalDetails p {
+  color: black;
+  font-size: 1em;
+  line-height: normal;
+}
