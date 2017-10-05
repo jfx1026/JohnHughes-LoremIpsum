@@ -31,43 +31,23 @@ body {
 
 h1, h2 {
   position: relative;
-  margin: 0;
-  color: black;
-  font-family: "Bowlby One SC", sans-serif; }
-
-h1 {
-  line-height: 0.8;
-  font-size: 6em;
-  letter-spacing: 0;
+  margin-right: 0;
+  margin-bottom: 0;
   margin-top: .2em;
   margin-left: 0;
-  text-transform: uppercase;
-  font-weight: normal; }
-
-h2 {
+  font-family: "Cantarell", sans-serif;
+  line-height: 0.8;
   font-size: 1.2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: red;
-  background-color: red; }
-
-h2:before {
-  content: "";
-  margin: 0 auto;
-  position: absolute;
-  top: 15px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 95%;
-  z-index: -1; }
-
-h2 span {
-  background: white;
-  padding: .75em;
-  border: white solid .02em; }
-
-.pinkTitle {
+  font-weight: normal !important;
   color: black; }
+
+h1::nth-letter(even) {
+  font-weight: bold; }
+
+h2::nth-letter(even) {
+  font-weight: bold; }
 
 .formContainer {
   margin-top: 0;
