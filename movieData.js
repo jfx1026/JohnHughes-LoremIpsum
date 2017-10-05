@@ -102,7 +102,7 @@ function writeSentences() {
   }
 
   stringData = stringData.join(" "); // remove the commas from the output
-  document.getElementById("loremIpsumBox").innerHTML += ("<br/>" + stringData + "<br/>"); // puts the words in the div
+  document.getElementById("loremIpsumBox").innerHTML += ("<p>" + stringData + "</p>"); // puts the words in the div
   
 }
 
@@ -117,7 +117,7 @@ function writeParagraphs() {
     var tempData = globalJsonVar[movieIndex].paragraphs[rP];
     console.log ("rP = " + rP); // testing random variable
     tempData = tempData.join(" "); // remove the commas from the output          
-    document.getElementById("loremIpsumBox").innerHTML += ("<br/>" + tempData + "<br/>"); // puts the words in the div
+    document.getElementById("loremIpsumBox").innerHTML += ("<p>" + tempData + "</p>"); // puts the words in the div
     rP++; //increment rP to keep the loop going
   }
 }

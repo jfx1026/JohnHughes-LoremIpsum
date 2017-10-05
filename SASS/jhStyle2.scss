@@ -142,6 +142,7 @@ h2 {
 	background-color: white;
 	color: gray;
 	padding: 0;
+	margin-bottom: 2em;
 }
 
 //info and modal
@@ -159,6 +160,40 @@ h2 {
 .fa:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.modal {
+  background-color: $pink-color !important;
+  font-family: $font-pink !important;
+  font-size: 1em !important;
+}
+
+.modalTitle h2 {
+  color: $title-color !important;
+}
+
+.modalTitle h1 {
+  text-transform: uppercase !important;
+  font-family: $font-stack;
+}
+
+.modalDisclaimer h3 {
+  color: $title-color !important;
+  font-size: 1em;
+}
+
+.modalDisclaimer {
+  background-color: black;
+  padding-left: 3em;
+  padding-right: 2em;
+  padding-top: .1em;
+  padding-bottom: .1em;  
+  margin-left: -2em;
+  width: 60%;
+}
+
+.modal hr {
+  visibility: hidden;
 }
 
 // drop down menu

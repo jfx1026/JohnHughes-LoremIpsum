@@ -104,7 +104,8 @@ h2 {
 #loremIpsumBox {
   background-color: white;
   color: gray;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 2em; }
 
 #info {
   text-align: right;
@@ -118,6 +119,34 @@ h2 {
 .fa:hover {
   opacity: 1;
   cursor: pointer; }
+
+.modal {
+  background-color: #E34E8B !important;
+  font-family: "Yantramanav", sans-serif !important;
+  font-size: 1em !important; }
+
+.modalTitle h2 {
+  color: white !important; }
+
+.modalTitle h1 {
+  text-transform: uppercase !important;
+  font-family: "PT Sans Narrow", sans-serif; }
+
+.modalDisclaimer h3 {
+  color: white !important;
+  font-size: 1em; }
+
+.modalDisclaimer {
+  background-color: black;
+  padding-left: 3em;
+  padding-right: 2em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  margin-left: -2em;
+  width: 60%; }
+
+.modal hr {
+  visibility: hidden; }
 
 .styled-select {
   background: transparent;

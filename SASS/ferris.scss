@@ -17,7 +17,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   margin: 0;
-  background-color: $pink-color;  
+  background-color: $pink-color;
 }
 
 .titleBlack {
@@ -165,7 +165,53 @@ h2 span {
 #loremIpsumBox {
 	background-color: white;
 	color: gray;
-	padding: 0;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+//info and modal
+#info {
+  text-align: right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.fa {
+  color: $title-color;
+  opacity: 0.2;
+}
+
+.fa:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modalTitle h1 {
+  font-size: 3em !important;
+  line-height: 1em !important;
+  text-align: center !important;
+  margin-bottom: 0.35em !important;
+}
+
+.modalTitle h2 {
+  width: 100% !important;
+  color: red !important;
+  text-align: center;
+  text-transform: uppercase !important;
+}
+
+.modalTitle h2:before {
+  width: 24%;
+}
+
+.modalTitle h2 span {
+  background: white;
+  padding: .75em;
+  border: white solid .02em;
+}
+
+.modalDisclaimer h3 {
+  font-size: 1em;
 }
 
 // drop down menu
