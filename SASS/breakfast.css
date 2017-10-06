@@ -27,7 +27,10 @@ body {
 .textContainer {
   position: relative;
   right: 0;
-  top: 10%; }
+  top: 10%;
+  background-image: url(images/breakfast-title.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 h1, h2 {
   position: relative;
@@ -41,7 +44,8 @@ h1, h2 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: normal !important;
-  color: black; }
+  color: black;
+  text-indent: -9999px; }
 
 h1::nth-letter(even) {
   font-weight: bold; }
