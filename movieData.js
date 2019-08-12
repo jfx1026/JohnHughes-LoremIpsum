@@ -32,6 +32,12 @@ function changeMovie() {
   } else if (movieSelect == "The Breakfast Club") {
     movieIndex = 2;
     swapStyleSheet("breakfast.css");
+  } else if (movieSelect == "Sixteen Candles") {
+    movieIndex = 3;
+    swapStyleSheet("sixteen.css");
+  } else if (movieSelect == "Some Kind of Wonderful") {
+    movieIndex = 4;
+    swapStyleSheet("wonderful.css");
   }
   console.log("Selected Movie = " + movieSelect);
   console.log("movieIndex = " + movieIndex);
