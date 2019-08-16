@@ -1,10 +1,6 @@
 body {
   font: 100% "Open Sans", sans-serif;
   background: url(images/ferris-background.png) no-repeat center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin: 0;
   background-color: white; }
 

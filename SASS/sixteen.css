@@ -1,11 +1,7 @@
 body {
   font: 100% "Open Sans", sans-serif;
   background: url(images/sixteen-background.png) no-repeat center top;
-  background-position-y: -200px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position-y: -75px;
   margin: 0;
   background-color: white; }
 

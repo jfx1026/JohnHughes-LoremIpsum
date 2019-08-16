@@ -1,10 +1,6 @@
 body {
   font: 100% "PT Sans Narrow", sans-serif;
-  background: url(images/pip-background.png) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(images/pip-background.png) no-repeat center top;
   margin: 0;
   background-color: #E34E8B; }
 
@@ -113,7 +109,7 @@ h2 {
   margin-top: 0.5em; }
 
 .fa {
-  color: white;
+  color: #636466;
   opacity: 0.5; }
 
 .fa:hover {

@@ -8,11 +8,7 @@ $pink-color: white;
 body {
   font: 100% $font-stack;
   background: url(images/sixteen-background.png) no-repeat center top;
-  background-position-y: -200px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position-y: -75px;
   margin: 0;
   background-color: $pink-color;
 }

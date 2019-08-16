@@ -6,11 +6,7 @@ $pink-color: white;
 
 body {
   font: 100% $font-stack;
-  background: url(images/Some-Kind-Wonderful.jpg) no-repeat center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(images/Some-Kind-Wonderful.png) no-repeat center top;
   margin: 0;
   background-color: $pink-color;
 }
@@ -177,8 +173,8 @@ h2 {
 
 .modalTitle h2 {
   width: 100% !important;
-  color: white !important;
-  text-align: center;
+  color: $title-color !important;
+  text-align: center !important;
   text-transform: uppercase !important;
 }
 

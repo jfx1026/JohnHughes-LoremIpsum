@@ -1,10 +1,6 @@
 body {
   font: 100% "Open Sans", sans-serif;
-  background: url(images/Some-Kind-Wonderful.jpg) no-repeat center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(images/Some-Kind-Wonderful.png) no-repeat center top;
   margin: 0;
   background-color: white; }
 
@@ -136,8 +132,8 @@ h2 {
 
 .modalTitle h2 {
   width: 100% !important;
-  color: white !important;
-  text-align: center;
+  color: black !important;
+  text-align: center !important;
   text-transform: uppercase !important; }
 
 .modalTitle h2:before {

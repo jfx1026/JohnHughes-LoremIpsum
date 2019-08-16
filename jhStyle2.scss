@@ -6,7 +6,7 @@ $pink-color: #E34E8B;
 
 body {
   font: 100% $font-stack;
-  background: url(images/pip-background.jpg) no-repeat center;
+  background: url(images/pip-background.jpg) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,7 +138,18 @@ h2 {
 
 // info block and modal
 #info {
-  position: absolute;
   text-align: right;
   margin-right: .05em;
+  color: $title-color;
 }
+
+.fa {
+  color: $title-color;
+  opacity: 0.2;
+}
+
+.fa:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+

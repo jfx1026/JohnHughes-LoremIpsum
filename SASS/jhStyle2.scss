@@ -6,11 +6,7 @@ $pink-color: #E34E8B;
 
 body {
   font: 100% $font-stack;
-  background: url(images/pip-background.png) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(images/pip-background.png) no-repeat center top;
   margin: 0;
   background-color: $pink-color;  
 }
@@ -153,7 +149,7 @@ h2 {
 }
 
 .fa {
-  color: $title-color;
+  color: $primary-color;
   opacity: 0.5;
 }
 

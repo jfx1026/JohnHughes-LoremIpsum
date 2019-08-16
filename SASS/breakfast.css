@@ -1,10 +1,6 @@
 body {
   font: 100% "Open Sans", sans-serif;
   background: url(images/breakfast-background.png) no-repeat center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin: 0;
   background-color: white; }
 
@@ -32,7 +28,8 @@ body {
   background-repeat: no-repeat;
   background-size: auto 100%;
   height: 10em;
-  background-position: center; }
+  background-position: center;
+  text-indent: -9999px; }
 
 h1, h2 {
   position: relative;
@@ -46,8 +43,10 @@ h1, h2 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: normal !important;
-  color: black;
-  text-indent: -9999px; }
+  color: #851313; }
+
+h3 {
+  color: #851313; }
 
 h1::nth-letter(even) {
   font-weight: bold; }
@@ -95,7 +94,7 @@ h2::nth-letter(even) {
 #textLegend, .radioOption {
   float: left;
   margin-right: .4em;
-  color: red; }
+  color: black; }
 
 #generateButton {
   clear: both; }
@@ -131,6 +130,17 @@ h2::nth-letter(even) {
 .pink {
   background-color: white; }
 
+.fa {
+  margin-left: .25em;
+  margin-top: .25em;
+  color: black;
+  opacity: .6; }
+
+.modalTitle h1, .modalTitle h2 {
+  color: #851313 !important;
+  font-family: "Cantarell", sans-serif !important;
+  font-weight: bold !important; }
+
 #buttonIpsum {
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
@@ -143,8 +153,11 @@ h2::nth-letter(even) {
   font-size: 1em; }
 
 #buttonIpsum:hover {
-  background: red;
+  background: #851313;
   text-decoration: none; }
+
+a {
+  color: black; }
 
 @media (max-width: 1024px) {
   h1 {

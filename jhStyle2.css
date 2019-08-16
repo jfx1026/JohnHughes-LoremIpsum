@@ -1,6 +1,6 @@
 body {
   font: 100% "PT Sans Narrow", sans-serif;
-  background: url(images/pip-background.jpg) no-repeat center;
+  background: url(images/pip-background.jpg) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -99,5 +99,18 @@ h2 {
 #loremIpsumBox {
   background-color: white;
   color: gray; }
+
+#info {
+  text-align: right;
+  margin-right: .05em;
+  color: white; }
+
+.fa {
+  color: white;
+  opacity: 0.2; }
+
+.fa:hover {
+  opacity: 1;
+  cursor: pointer; }
 
 /*# sourceMappingURL=jhStyle2.css.map */
