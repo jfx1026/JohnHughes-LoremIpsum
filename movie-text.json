@@ -5581,8 +5581,7 @@
   },
   {
     "movie": "Some Kind of Wonderful",
-    "paragraphs": [ 
-      [
+    "paragraphs": [
         [
           "Run, run, run.",
           "He's gonna get you.",
@@ -7207,7 +7206,6 @@
           "I had a feeling.",
           "Well, how do they look?",
           "You look good wearing my future."
-        ]
       ]
     ]
   }
