@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Lorem Ipsum Generator by John Freeborn: Instructions</title>
+
+    <!-- LOAD CSS -->    
+    <link rel="stylesheet" href="stylesheets/readme.css">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="titles">
+        <h1>Random Lorem Ipsum Generator</h1>
+        <h2>By John Freeborn</h2>
+      </div>
+      <div class="intro">
+        <p>This project was directly inspired by the amazing (and sadly defunct) Jurassic Park Lorem Ispum Generator. I wanted to create something like that, but with a few more bells and whistles. I also wanted to use this project as a tool to learn javascript, gitHub and to expand my skills on the front-end web development side of things.</p>
+        <p>This project is available on gitHub for you to use, modify and improve. If you make something awesome with what I started here, please share it with me <a href="https://twitter.com/jfx1026" target="_blank">@jfx1026</a> on Twitter. I've tried to document how this works so that anyone with a little know how can take what I've built and create their own lorem ipsum generator. If you are into Seinfeld, and you are willing to format the scripts into JSON, then you could make that happen. Maybe you are more of an X-Files nerd, go to it.</p>
+        <p>Thanks for checking this out. Share it and please use this in all of your dummy text situations–it's so much better than boring old latin.</p>
+      </div>
+      <hr>
+      <div class="instructions">
+        <h3>How to use and modify this project</h3>
+        <p>I should start my reminding you that this is my first coding project. I'm a designer by trade, so if you see something off–you are probably correct. If you can improve this code, please do.</p>
+        <h4>What does this Lorem Ipsum Generator do?</h4>
+        <p>This project will randomly generate lorem ipsum text from a JSON file. The user can specify if they'd like sentences or paragraphs and the number of those they would like. The program will then generate a random starting point and pull the specified number of sentences/paragraphs and write those into a text area on screen.</p>
+        <p>In addition, I've created the ability to choose from a series of text groups, by separating the text into sections within a JSON file. This is not the easiest way to format text, but it gave me the ability to define paragraphs easily. As the program shifts from one section of text to the next (as in my movie example) it will call up a new CSS style sheet to reskin the page with a new look and feel.</p>
+        <p class="future">In the future: I'd love to make the text content easier to create, by using a standard txt file with some specified markup that the program could read and digest.</p>
+        <h4>How to make your own lorem ipsum generator</h4>
+        <p>To create your own version of this you should start with the JSON file. This is where all of the text lives. I can't get into the complexities of <a href="https://json.org/example.html">JSON</a> creation, but it is a standard text file with a very specific (and inflexible) format. You'll need to follow it's rules. I found this <a href="https://jsonlint.com/">JSON validator</a> to be a invaluable resource while making this. I've created two version of the JSON file to get you started. The simple one is just one movie and the more complex one has five movies in on big JSON file. Use these to hump start your own lorem ipsum project.</p>
+        <p class="future">I did try and break these into separate JSON files at one point, but I never got that working well enough to push forward. If someone smart with text ingestion or regex magic and wants to improve this part–yes please.</p>
+        <p>Once you have your properly formatted JSON, you can go about modifying the HTML and CSS to match your concept. There is a CSS file that loads on start and one for each of the sections which load dynamically when the user selects a new movie with the drop down menu.</p>
+        <h4>Ok, but how does the code actually work?</h4>
+        <p>The HTML loads and the first java script file to load is "lorem-ipsum.js". This file does the hard work. The first task it does is ingesting the JSON file with your text. It loads that text into an array. Now that you have text data in an array the program can write text into the page.</p>
+        <p>The program looks at the array and figures out how many paragraphs and sentences are available. If the user asks for 500 paragraphs and only 499 exist, the program will usually fail. This is a little funny, and will work sometimes. I don't know why. Next, the program generates a random starting point using this range.</p>
+        <p>If all goes to plan, when the user clicks the generate button, text is written into the text box below the button.</p>
+        <p>Some of this work is executed through the next javascript file named "movieData.js". This file counts the movie options, loads the new CSS files when the user selects a new movie, and writes the text with some basic formatting. If you will have multiple text source options, this is where you connect that dropdown to the correct data and the CSS files.</p>
+        <p class="future">There's probably a smart way to grab this data from the JSON.</p>
+      </div>
+      
+      
+      <hr>
+      <div class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      </div>
+    </div>
+  </body>
+</html>

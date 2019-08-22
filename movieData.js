@@ -25,19 +25,19 @@ function changeMovie() {
 
   if (movieSelect == "Pretty In Pink") {
     movieIndex = 0;
-    swapStyleSheet("jhStyle2.css");
+    swapStyleSheet("stylesheets/jhStyle2.css");
   } else if (movieSelect == "Ferris Bueller's Day Off") {
     movieIndex = 1;
-    swapStyleSheet("ferris.css");
+    swapStyleSheet("stylesheets/ferris.css");
   } else if (movieSelect == "The Breakfast Club") {
     movieIndex = 2;
-    swapStyleSheet("breakfast.css");
+    swapStyleSheet("stylesheets/breakfast.css");
   } else if (movieSelect == "Sixteen Candles") {
     movieIndex = 3;
-    swapStyleSheet("sixteen.css");
+    swapStyleSheet("stylesheets/sixteen.css");
   } else if (movieSelect == "Some Kind of Wonderful") {
     movieIndex = 4;
-    swapStyleSheet("wonderful.css");
+    swapStyleSheet("stylesheets/wonderful.css");
   }
   console.log("Selected Movie = " + movieSelect);
   console.log("movieIndex = " + movieIndex);

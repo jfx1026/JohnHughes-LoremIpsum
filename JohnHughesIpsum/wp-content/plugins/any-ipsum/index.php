@@ -1,2 +1,0 @@
-<?php
-// Bacon is delicious.
