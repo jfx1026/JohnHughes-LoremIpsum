@@ -1,2 +1,2 @@
 # JohnHughes-LoremIpsum
-Lorem Ipsum generator
+Random Lorem Ipsum generator
