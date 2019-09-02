@@ -1,6 +1,6 @@
 body {
   font: 100% "Open Sans", sans-serif;
-  background: url("../images/breakfast-background.png") no-repeat center top;
+  background: url("../images/breakfast-background.png") no-repeat center top fixed;
   margin: 0;
   background-color: white; }
 
@@ -173,7 +173,7 @@ a {
     height: 8em; } }
 @media (max-width: 680px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url(../images/breakfast-background-p.png) no-repeat center top fixed;
     background-color: white; }
 
   h1 {
@@ -186,7 +186,7 @@ a {
     width: 50%; } }
 @media (max-width: 450px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url(../images/breakfast-background-p.png) no-repeat center top fixed;
     background-color: white; }
 
   h1 {
@@ -202,6 +202,10 @@ a {
     margin-top: .5em; }
 
   #buttonIpsum {
-    padding: 5px 10px 5px 10px; } }
+    padding: 5px 10px 5px 10px; }
+
+  .textContainer {
+    top: -2em;
+    height: 6em; } }
 
 /*# sourceMappingURL=breakfast.css.map */

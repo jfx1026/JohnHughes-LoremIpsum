@@ -6,7 +6,7 @@ $pink-color: white;
 
 body {
   font: 100% $font-stack;
-  background: url('../images/Some-Kind-Wonderful.png') no-repeat center top;
+  background: url('../images/Some-Kind-Wonderful.png') no-repeat center top fixed;
   margin: 0;
   background-color: $pink-color;
 }
@@ -257,7 +257,7 @@ h2 {
 
 @media (max-width: 680px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url('../images/Some-Kind-Wonderfu-p.png') no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {
@@ -273,7 +273,7 @@ h2 {
 
 @media (max-width: 450px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url('../images/Some-Kind-Wonderfu-p.png') no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {

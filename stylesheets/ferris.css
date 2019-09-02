@@ -1,6 +1,6 @@
 body {
   font: 100% "Open Sans", sans-serif;
-  background: url("../images/ferris-background.png") no-repeat center top;
+  background: url("../images/ferris-background.png") no-repeat center -175px;
   margin: 0;
   background-color: white; }
 
@@ -89,7 +89,8 @@ h2 span {
 #numOption {
   float: left;
   text-align: center;
-  padding-top: .4em; }
+  padding-top: .4em;
+  border-color: black; }
 
 #textOption {
   display: inline;
@@ -207,7 +208,7 @@ h2 span {
     height: 8em; } }
 @media (max-width: 680px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url(../images/ferris-background-p.png) no-repeat center top fixed;
     background-color: white; }
 
   h1 {
@@ -220,7 +221,7 @@ h2 span {
     width: 50%; } }
 @media (max-width: 450px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url(../images/ferris-background-p.png) no-repeat center top fixed;
     background-color: white; }
 
   h1 {

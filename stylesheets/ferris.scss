@@ -11,7 +11,7 @@ $pink-color: white;
 
 body {
   font: 100% $font-stack;
-  background: url('../images/ferris-background.png') no-repeat center top;
+  background: url('../images/ferris-background.png') no-repeat center -175px;
   margin: 0;
   background-color: $pink-color;
 }
@@ -122,6 +122,7 @@ h2 span {
   float: left;
   text-align: center;
   padding-top: .4em;
+  border-color: $title-color;
 }
 
 #textOption {
@@ -275,7 +276,7 @@ h2 span {
 
 @media (max-width: 680px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url(../images/ferris-background-p.png) no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {
@@ -291,7 +292,7 @@ h2 span {
 
 @media (max-width: 450px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url(../images/ferris-background-p.png) no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {

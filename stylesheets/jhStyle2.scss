@@ -261,7 +261,7 @@ h2 {
 
 @media (max-width: 680px) {
   body {
-    background: url('../images/pip-background-p.png') no-repeat center;
+    background: url('../images/pip-background-p.png') no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {
@@ -277,7 +277,7 @@ h2 {
 
 @media (max-width: 450px) {
   body {
-    background: url('../images/pip-background-p.png') no-repeat center;
+    background: url('../images/pip-background-p.png') no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {

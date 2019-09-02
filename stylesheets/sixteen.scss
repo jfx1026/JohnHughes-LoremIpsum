@@ -7,7 +7,7 @@ $pink-color: white;
 
 body {
   font: 100% $font-stack;
-  background: url('../images/sixteen-background.png') no-repeat center top;
+  background: url('../images/sixteen-background.png') no-repeat center top fixed;
   background-position-y: -75px;
   margin: 0;
   background-color: $pink-color;
@@ -99,6 +99,7 @@ h2 {
   float: left;
   text-align: center;
   padding-top: .4em;
+  border-color: $title-color;
 }
 
 #textOption {
@@ -252,7 +253,7 @@ h2 {
 
 @media (max-width: 680px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url('../images/sixteen-background-p.png') no-repeat center top fixed;
     background-color: $pink-color;
   }
   h1 {
@@ -268,14 +269,15 @@ h2 {
 
 @media (max-width: 450px) {
   body {
-    background: url(images/pip-background-p.png) no-repeat center;
+    background: url("../images/sixteen-background-p.png") no-repeat center top fixed;
     background-color: $pink-color;
+    background-position-y: -4em;
   }
   h1 {
     font-size: 3em;
   }
   .titleBlack {
-    height: 4.75em;
+    height: 6em;
   }
   #movieDropdown {
     width: 50%;
@@ -285,5 +287,13 @@ h2 {
   }
   #buttonIpsum {
     padding: 5px 10px 5px 10px;
+  }
+  .titleBlack {
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  height: 7em;
+  margin-top: 0;
   }
 }

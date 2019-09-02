@@ -196,7 +196,7 @@ h2 {
     height: 8em; } }
 @media (max-width: 680px) {
   body {
-    background: url("../images/pip-background-p.png") no-repeat center;
+    background: url("../images/pip-background-p.png") no-repeat center top fixed;
     background-color: #E34E8B; }
 
   h1 {
@@ -209,7 +209,7 @@ h2 {
     width: 50%; } }
 @media (max-width: 450px) {
   body {
-    background: url("../images/pip-background-p.png") no-repeat center;
+    background: url("../images/pip-background-p.png") no-repeat center top fixed;
     background-color: #E34E8B; }
 
   h1 {
