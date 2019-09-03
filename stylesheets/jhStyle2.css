@@ -132,6 +132,9 @@ h2 {
   text-transform: uppercase !important;
   font-family: "PT Sans Narrow", sans-serif; }
 
+.modal p a {
+  color: white; }
+
 .modalDisclaimer h3 {
   color: white !important;
   font-size: 1em; }
@@ -206,7 +209,16 @@ h2 {
     height: 6em; }
 
   #movieDropdown {
-    width: 50%; } }
+    width: 50%; }
+
+  .lableText {
+    color: white; }
+
+  .modal {
+    width: 100% !important; }
+
+  .modalDisclaimer {
+    width: 85%; } }
 @media (max-width: 450px) {
   body {
     background: url("../images/pip-background-p.png") no-repeat center top fixed;
@@ -225,6 +237,15 @@ h2 {
     margin-top: .5em; }
 
   #buttonIpsum {
-    padding: 5px 10px 5px 10px; } }
+    padding: 5px 10px 5px 10px; }
+
+  .lableText {
+    color: white; }
+
+  .modal {
+    width: 100% !important; }
+
+  .modalDisclaimer {
+    width: 85%; } }
 
 /*# sourceMappingURL=jhStyle2.css.map */

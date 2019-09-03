@@ -281,12 +281,20 @@ h2 {
   }
   .titleBlack {
     height: 4.75em;
+    padding: 0;
   }
+  #textRadio {
+    width: 95%;
+  }
+  #numOption {
+    float: none;
+  }  
   #movieDropdown {
     width: 50%;
   }
   .formContainer {
     margin-top: .5em;
+    width: 95%;
   }
   #buttonIpsum {
     padding: 5px 10px 5px 10px;

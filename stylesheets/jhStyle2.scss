@@ -177,6 +177,10 @@ h2 {
   font-family: $font-stack;
 }
 
+.modal p a {
+  color: $title-color;
+}
+
 .modalDisclaimer h3 {
   color: $title-color !important;
   font-size: 1em;
@@ -273,6 +277,15 @@ h2 {
   #movieDropdown {
     width: 50%;
   }
+  .lableText {
+	  color: $title-color;
+  }
+  .modal {
+    width: 100% !important;
+  }
+  .modalDisclaimer {
+    width: 85%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -294,5 +307,14 @@ h2 {
   }
   #buttonIpsum {
     padding: 5px 10px 5px 10px;
+  }
+  .lableText {
+	  color: $title-color;
+  }  
+  .modal {
+    width: 100% !important;
+  }
+  .modalDisclaimer {
+    width: 85%;
   }
 }

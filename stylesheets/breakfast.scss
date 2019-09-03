@@ -232,6 +232,9 @@ a {
   .titleBlack {
     height: 8em;
   }
+  .formContainer {
+    margin-top: 5em;
+  }
 }
 
 @media (max-width: 680px) {
@@ -261,11 +264,15 @@ a {
   .titleBlack {
     height: 4.75em;
   }
-  #movieDropdown {
-    width: 50%;
-  }
   .formContainer {
+    width: 95%;
     margin-top: .5em;
+  }
+  #numOption {
+    float: none;
+  }
+  #textRadio {
+    width: 95%;
   }
   #buttonIpsum {
     padding: 5px 10px 5px 10px;
@@ -274,4 +281,13 @@ a {
   top: -2em;
   height: 6em;
   }
+  .modal {
+    width: 90% !important;
+  }
+  .modalDisclaimer {
+    width: 85%;
+  }
+  .modalTitle h1 {
+    font-size: 2em !important;
+  }  
 }

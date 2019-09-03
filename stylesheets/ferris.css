@@ -7,7 +7,7 @@ body {
 .titleBlack {
   background: rgba(255, 255, 255, 0);
   text-align: center;
-  padding: 20px 20px 0 0;
+  padding: 0;
   width: 100%;
   height: 11em;
   margin-top: 0.5em; }
@@ -157,6 +157,9 @@ h2 span {
   padding: .75em;
   border: white solid .02em; }
 
+.modal p a {
+  color: #636466; }
+
 .modalDisclaimer h3 {
   font-size: 1em; }
 
@@ -215,10 +218,16 @@ h2 span {
     font-size: 4em; }
 
   .titleBlack {
-    height: 6em; }
+    height: 8em; }
 
   #movieDropdown {
-    width: 50%; } }
+    width: 50%; }
+
+  .modal {
+    width: 100% !important; }
+
+  .modalDisclaimer {
+    width: 85%; } }
 @media (max-width: 450px) {
   body {
     background: url(../images/ferris-background-p.png) no-repeat center top fixed;
@@ -228,15 +237,34 @@ h2 span {
     font-size: 3em; }
 
   .titleBlack {
-    height: 4.75em; }
+    height: 8em; }
 
   #movieDropdown {
     width: 50%; }
 
   .formContainer {
-    margin-top: .5em; }
+    margin-top: .5em;
+    width: 90%; }
 
   #buttonIpsum {
-    padding: 5px 10px 5px 10px; } }
+    padding: 5px 10px 5px 10px; }
+
+  #textRadio {
+    width: 100%; }
+
+  #numOption {
+    float: none; }
+
+  #textOption {
+    float: none; }
+
+  .modal {
+    width: 100% !important; }
+
+  .modalDisclaimer {
+    width: 85%; }
+
+  .modalTitle h1 {
+    font-size: 2em !important; } }
 
 /*# sourceMappingURL=ferris.css.map */
