@@ -59,6 +59,7 @@ function getRange() {
   } else {
     writeSentences(); // start sentences function
   }
+  copyToClipboard();
 }
 
 function randomizer() {
@@ -83,6 +84,17 @@ function setUnits(u) {
   console.log("Paragraphs or Sentences? --> " + unitSelect);
 }
 
+//function to grab the text from the output and copy to clipboard
+function copyToClipboard() {
+  var clipboard = new ClipboardJS('.btn');
+      clipboard.on('success', function(e) {
+          console.log(e);
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+      });   
+}
+    
 //START THE PROCESS
 
 // get the data
