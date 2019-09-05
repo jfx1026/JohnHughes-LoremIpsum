@@ -104,4 +104,6 @@ function writeParagraphs() {
     document.getElementById("loremIpsumBox").innerHTML += ("<p>" + tempData + "</p>"); // puts the words in the div
     rP++; //increment rP to keep the loop going
   }
+  
+  document.getElementById("copyButton").style.display = "block";
 }
