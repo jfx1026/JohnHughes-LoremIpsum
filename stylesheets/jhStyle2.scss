@@ -71,6 +71,7 @@ h2 {
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
   text-align: center;
   width: 75%;
 }
@@ -115,7 +116,7 @@ h2 {
 }
 
 #textOption legend {
-  width: 1%;
+  width: 1%;  
 }
 
 #textLegend, .radioOption {
@@ -127,8 +128,12 @@ h2 {
   clear: both;
 }
 
-#textRadio {
+#textRadio, #copyButton {
   padding-top: .5em;
+}
+
+#copyButton {
+  display: none;
 }
 
 #generateButton {
@@ -141,8 +146,9 @@ h2 {
 #loremIpsumBox {
 	background-color: white;
 	color: gray;
-	padding: 0;
 	margin-bottom: 2em;
+  padding: 1em;
+  opacity: 0;
 }
 
 //info and modal
@@ -241,6 +247,20 @@ h2 {
 #buttonIpsum:hover {
   background: #000000;
   text-decoration: none;
+}
+
+#buttonCopy {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: $font-stack;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-size: 1em;  
+}
+
+#buttonCopy:hover {
+  background: pink;
 }
 
 // responsive CSS
