@@ -9,12 +9,17 @@ body {
   text-align: center;
   width: 100%;
   padding: 5px 0;
-  min-height: 80px; }
+  min-height: 1em; }
 
 .textContainer {
-  position: absolute;
-  right: 20%;
-  top: 10%; }
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.titleWrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; }
 
 h1, h2 {
   position: relative;
@@ -26,9 +31,8 @@ h1 {
   font-size: 6em;
   font-family: sans-serif;
   letter-spacing: -.05em;
-  margin-top: .05em;
-  margin-left: -.06em;
-  text-transform: none; }
+  text-transform: none;
+  text-align: left; }
 
 h2 {
   font-size: 1.2em;
@@ -93,7 +97,6 @@ h2 {
   background-color: white;
   color: gray;
   padding: 0;
-  margin-bottom: 2em;
   padding: 1em; }
 
 #info {
@@ -183,18 +186,18 @@ h2 {
 #buttonCopy:hover {
   background: aliceblue; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   h1 {
-    font-size: 7em; } }
-@media (max-width: 800px) {
+    font-size: 5em; } }
+@media (max-width: 950px) {
   h1 {
-    font-size: 6em; } }
+    font-size: 3.5em; } }
 @media (max-width: 680px) {
   body {
     background-color: lightblue; }
 
   h1 {
-    font-size: 4em; }
+    font-size: 3em; }
 
   #movieDropdown {
     width: 50%; } }
@@ -203,7 +206,10 @@ h2 {
     background-color: lightblue; }
 
   h1 {
-    font-size: 3em; }
+    font-size: 1.75em; }
+
+  h2 {
+    font-size: 1em; }
 
   #movieDropdown {
     width: 50%; }
@@ -212,6 +218,9 @@ h2 {
     margin-top: .5em; }
 
   #buttonIpsum {
-    padding: 5px 10px 5px 10px; } }
+    padding: 5px 10px 5px 10px; }
+
+  .modal {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=basic.css.map */
