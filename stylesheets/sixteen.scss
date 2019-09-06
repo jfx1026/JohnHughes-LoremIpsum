@@ -141,6 +141,7 @@ h2 {
 	color: gray;
 	padding: 1em;
 	margin-bottom: 2em;
+	opacity: 0;
 }
 
 //info and modal
@@ -229,6 +230,20 @@ h2 {
 #buttonIpsum:hover {
   background: $secondary-color;
   text-decoration: none;
+}
+
+#buttonCopy {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: $font-stack;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-size: 1em;  
+}
+
+#buttonCopy:hover {
+  background: aliceblue;
 }
 
 // responsive CSS

@@ -151,7 +151,9 @@ h2::nth-letter(even) {
 #loremIpsumBox {
 	background-color: white;
 	color: gray;
-	padding: 0;
+	padding: 1em;
+	margin-bottom: 2em;
+	opacity: 0;
 }
 
 // drop down menu
@@ -208,6 +210,20 @@ h2::nth-letter(even) {
 #buttonIpsum:hover {
   background: $primary-color;
   text-decoration: none;
+}
+
+#buttonCopy {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: $font-stack;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-size: 1em;  
+}
+
+#buttonCopy:hover {
+  background: aliceblue;
 }
 
 a {

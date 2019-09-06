@@ -46,6 +46,9 @@ function changeMovie() {
   //clear text in box first
   document.getElementById("loremIpsumBox").innerHTML = (""); // empty the div
 
+  //reset lorem ipsum box to clear and hide copy to clipboard button
+  document.getElementById("loremIpsumBox").style.opacity = "0";
+  document.getElementById("copyButton").style.display = "none";
 }
 
 // CSS Style Sheet swap function
@@ -110,6 +113,9 @@ function writeSentences() {
   stringData = stringData.join(" "); // remove the commas from the output
   document.getElementById("loremIpsumBox").innerHTML += ("<p>" + stringData + "</p>"); // puts the words in the div
   
+  document.getElementById("copyButton").style.display = "block";
+  document.getElementById("loremIpsumBox").style.opacity = "1";
+  
 }
 
 // write text to page based on user vars
@@ -126,4 +132,7 @@ function writeParagraphs() {
     document.getElementById("loremIpsumBox").innerHTML += ("<p>" + tempData + "</p>"); // puts the words in the div
     rP++; //increment rP to keep the loop going
   }
+  document.getElementById("copyButton").style.display = "block";
+  document.getElementById("loremIpsumBox").style.opacity = "1";
+
 }
